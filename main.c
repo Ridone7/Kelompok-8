@@ -12,4 +12,4 @@ int main() {
     printf("3. Kalkulator kalkulator bunga tabungan\n");
     printf("4. Kalkulator kalkulator sisa uang jajan harian\n");
     return 0;
-}
+} //suksesbesar
