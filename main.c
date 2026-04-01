@@ -21,24 +21,19 @@ void splitBill() {
 
     printf("=== Kalkulator Split Bill ===\n");
     
-    // Input total tagihan
     printf("Masukkan total tagihan: ");
     scanf("%f", &totalTagihan);
 
-    // Input jumlah orang
     printf("Masukkan jumlah orang: ");
     scanf("%d", &jumlahOrang);
 
-    // Validasi agar tidak dibagi nol
     if (jumlahOrang <= 0) {
         printf("Jumlah orang harus lebih dari 0!\n");
         return;
     }
 
-    // Perhitungan
     bayarPerOrang = totalTagihan / jumlahOrang;
 
-    // Output hasil
     printf("Setiap orang harus membayar: Rp %.2f\n", bayarPerOrang);
 }
 
