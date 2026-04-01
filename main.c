@@ -1,16 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    printf("=================================\n");
-    printf("ASISTEN KEUANGAN MAHASISWA\n");
-    printf("=================================\n");
+    float saldoAwal, bungaBulanan, totalUang, jumlahBunga;
 
-   printf("pilih menu: \n");
+    // Input saldo awal
+    printf("Masukkan saldo awal: ");
+    scanf("%f", &saldoAwal);
 
-    printf("1. Kalkulator diskon belanja\n");
-    printf("2. Kalkulator split bill\n");
-    printf("3. Kalkulator kalkulator bunga tabungan\n");
-    printf("4. Kalkulator kalkulator sisa uang jajan harian\n");
+    // Input persentase bunga bulanan
+    printf("Masukkan persentase bunga bulanan: ");
+    scanf("%f", &bungaBulanan);
+
+    // Menghitung jumlah bunga
+    jumlahBunga = saldoAwal * bungaBulanan / 100;
+
+    // Menghitung total uang setelah ditambah bunga
+    totalUang = saldoAwal + jumlahBunga;
+
+    // Output hasil
+    printf("\nJumlah bunga: Rp %.2f\n", jumlahBunga);
+    printf("Total uang setelah ditambah bunga: Rp %.2f\n", totalUang);
+
     return 0;
 }
 #include <stdio.h>
