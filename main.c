@@ -68,8 +68,8 @@ int main() {
 }
 
 void Mencari_Diskon(){
-    int hargaAwal, hargaAkhir, Diskon;
-    
+    int hargaAwal, hargaAkhir, diskon;
+
     printf("Masukkan harga awal: ");
     scanf("%d", &hargaAwal);
 
@@ -80,6 +80,4 @@ void Mencari_Diskon(){
 
     printf("Harga Akhir: %d", hargaAkhir);
     return 0;
-}
-
 }
