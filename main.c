@@ -64,6 +64,22 @@ int main() {
         default:
             printf("\nPilihan tidak valid.\n");
     }
-
     return 0;
+}
+
+void Mencari_Diskon(){
+    int hargaAwal, hargaAkhir, Diskon;
+    
+    printf("Masukkan harga awal: ");
+    scanf("%d", &hargaAwal);
+
+    printf("Masukkan presentase diskon: ");
+    scanf("%d", &diskon);
+
+    hargaAkhir = hargaAwal-(hargaAwal*diskon/100);
+
+    printf("Harga Akhir: %d", hargaAkhir);
+    return 0;
+}
+
 }
